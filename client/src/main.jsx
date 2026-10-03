@@ -8,7 +8,7 @@ import {AppProvider} from "./context/AppContext.jsx"
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 if (!clerkPublishableKey) {
-  throw new Error("Missing VITE_CLERK_PUBLISHABLE_KEY. Add it to client/.env before starting Drivea.");
+  throw new Error("Missing VITE_CLERK_PUBLISHABLE_KEY. Configure it in the client environment or Vercel project before building Drivea.");
 }
 
 const ClerkRouterProvider = () => {

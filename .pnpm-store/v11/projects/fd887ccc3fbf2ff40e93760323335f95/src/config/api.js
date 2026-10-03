@@ -1,7 +1,15 @@
 import axios from "axios";
 
+// Vite replaces VITE_* values at build time. Local development may use the
+// Express default, but production must explicitly provide its deployed API.
+const apiBaseUrl = import.meta.env.VITE_BASE_URL || (import.meta.env.DEV ? "http://localhost:3000" : "");
+
+if (!apiBaseUrl) {
+    throw new Error("Missing VITE_BASE_URL. Configure the deployed Drivea API URL before building for production.");
+}
+
 const api = axios.create({
-    baseURL: import.meta.env.VITE_BASE_URL || "http://localhost:3000",
+    baseURL: apiBaseUrl,
 });
 
 // Clerk owns the browser session. The token is injected just before each private
