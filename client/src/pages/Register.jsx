@@ -30,7 +30,7 @@ const Register = () => (
             <div className='absolute inset-0 bg-[url("/pattern.svg")]'></div>
             <div className="relative z-10 flex items-center gap-3"><img src="/logo.svg" alt="Drivea Logo" className="max-h-9" /><span className="text-4xl font-medium uppercase text-zinc-900">Drivea</span></div>
             <div className="relative z-10 my-12 space-y-6"><h1 className="text-3xl md:text-4xl lg:text-5xl tracking-tight text-zinc-900 leading-tight">Secure, Simple &amp; Fast <br /><span className="text-orange-600">Cloud Storage.</span></h1><p className="text-sm md:text-base text-zinc-600 max-w-md leading-relaxed">Store your files securely in our drive, organize into folders, share with permissions and access anywhere.</p></div>
-            <div className="relative z-10 text-sm text-zinc-500">© 2026 GreatStack. All rights reserved.</div>
+            <div className="relative z-10 text-sm text-zinc-500">© 2026 Hemanth_Manubolu. All rights reserved.</div>
         </div>
 
         <main className="md:w-1/2 p-8 md:p-12 lg:p-16 flex items-center justify-center bg-white" aria-label="Create an account">
